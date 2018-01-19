@@ -1,0 +1,1 @@
+ng build -dop false -op ../
