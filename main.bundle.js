@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div logo-header>\n  <div first-name>\n    Jing\n  </div>\n  <div last-name>\n    Xiong\n  </div>\n</div>\n\n\n\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div logo-header>\n  <div first-name>\n    Jing\n  </div>\n  <div last-name>\n    Xiong\n  </div>\n</div>\n<app-portfolio-item></app-portfolio-item>\n<app-portfolio-item></app-portfolio-item>"
 
 /***/ }),
 
@@ -32,7 +32,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "div[logo-header] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  font-family: 'Montserrat', sans-serif;\n  margin-top: 5%;\n  padding-bottom: 3%;\n  border-bottom: 1px solid #000000; }\n  div[logo-header] div[first-name] {\n    font-size: 40px; }\n  div[logo-header] div[last-name] {\n    font-size: 20px; }\n", ""]);
+exports.push([module.i, "div[logo-header] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  padding: 3%; }\n  div[logo-header] div[first-name] {\n    font-size: 32px; }\n  div[logo-header] div[last-name] {\n    font-size: 32px; }\n", ""]);
 
 // exports
 
@@ -82,6 +82,7 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__portfolio_item_portfolio_item_component__ = __webpack_require__("../../../../../src/app/portfolio-item/portfolio-item.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -92,13 +93,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["E" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]
+                __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__portfolio_item_portfolio_item_component__["a" /* PortfolioItemComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -109,6 +112,86 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-item/portfolio-item.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<div portfolio-item>\n  <div left-box>\n    <div category>{{category}}</div>\n    <div title>{{title}}</div>\n    <div description>{{description}}</div>\n  </div>\n  <div right-box>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-item/portfolio-item.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "div[portfolio-item] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  height: 360px;\n  min-width: 800px;\n  margin: 5%;\n  background: gray; }\n  div[portfolio-item] div[left-box] {\n    width: 60%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-orient: vertical;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: column;\n            flex-direction: column;\n    padding: 30px; }\n  div[portfolio-item] div[left-box] div[category] {\n      margin-bottom: 40px; }\n  div[portfolio-item] div[left-box] div[title] {\n      font-size: 3em;\n      margin-bottom: 10px; }\n  div[portfolio-item] div[left-box] div[description] {\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1; }\n  div[portfolio-item] div[right-box] {\n    height: 100%;\n    width: 40%; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/portfolio-item/portfolio-item.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PortfolioItemComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PortfolioItemComponent = /** @class */ (function () {
+    function PortfolioItemComponent() {
+        this.category = 'Category';
+        this.title = 'Project title';
+        this.description = 'This is a brief description of the project and what it means to you. Use this space to draw in the reader to click and learn more.';
+    }
+    PortfolioItemComponent.prototype.ngOnInit = function () {
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */])(),
+        __metadata("design:type", Object)
+    ], PortfolioItemComponent.prototype, "category", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */])(),
+        __metadata("design:type", Object)
+    ], PortfolioItemComponent.prototype, "title", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */])(),
+        __metadata("design:type", Object)
+    ], PortfolioItemComponent.prototype, "description", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Input */])(),
+        __metadata("design:type", String)
+    ], PortfolioItemComponent.prototype, "imgUrl", void 0);
+    PortfolioItemComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'app-portfolio-item',
+            template: __webpack_require__("../../../../../src/app/portfolio-item/portfolio-item.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/portfolio-item/portfolio-item.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PortfolioItemComponent);
+    return PortfolioItemComponent;
 }());
 
 

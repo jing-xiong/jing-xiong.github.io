@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat\");\n/* You can add global styles to this file, and also import other style files */\nbody {\n  margin: 0px; }\n", ""]);
+exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat\");\n/* You can add global styles to this file, and also import other style files */\nbody {\n  margin: 0px;\n  font-family: 'Montserrat', sans-serif; }\n", ""]);
 
 // exports
 

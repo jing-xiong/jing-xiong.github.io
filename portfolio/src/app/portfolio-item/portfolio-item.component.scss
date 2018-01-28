@@ -1,0 +1,28 @@
+div[portfolio-item] {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    min-width: 800px;
+    margin: 5%;
+    background: gray;
+    div[left-box] {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        div[category] {
+            margin-bottom: 40px;
+        }
+        div[title] {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        div[description] {
+            flex: 1;
+        }
+    }
+    div[right-box] {
+        height: 100%;
+        width: 40%;
+    }
+}
