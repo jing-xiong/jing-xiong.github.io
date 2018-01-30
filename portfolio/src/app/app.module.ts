@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { PortfolioItemComponent } from './portfolio-item/portfolio-item.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortfolioItemComponent
+    PortfolioItemComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

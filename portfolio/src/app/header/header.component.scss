@@ -1,0 +1,33 @@
+:host {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    padding: 3vh 5vw 3vh 5vw;
+}
+div[logo-header] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    div[first-name] {
+        font-size: 32px;
+
+    }
+    div[last-name] {
+        font-size: 32px;
+    }
+}
+div[nav-menu] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    a {
+        margin: 0 20px;
+        // text-decoration: underline;
+    }
+}
