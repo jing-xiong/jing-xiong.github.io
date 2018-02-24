@@ -2,3 +2,84 @@
     display: flex;
     flex-direction: column;
 }
+div[text-intro] {
+    padding: 5%;
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div[text-intro-title] {
+        font-weight: bold;
+        font-size: 3em;
+        margin: 3%;
+    }
+    div[text-intro-body] {
+        width: 60%;
+        margin: 3%;
+        font-size: 1.5em;
+    }
+    div[text-intro-disclaimer] {
+        font-style: italic;
+        font-size: 0.75em;
+    }
+}
+
+div[image-banner] {
+    height: 50vh;
+    background-color: gray;
+}
+
+div[text-section] {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    div[text-section-category] {
+        margin: 3%;
+        font-size: 1em;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    div[text-section-title] {
+        font-weight: bold;
+        font-size: 2em;
+        text-transform: capitalize;
+        margin: 3%;
+    }
+    div[text-section-body] {
+        font-size: 1em;
+        margin: 3%;
+        p {}
+    }
+    div[text-section-image] {
+        margin: 3%;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+        div[image-comparison] {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            div {
+                margin-right: 20px;
+            }
+            img {
+                max-width: 100%;
+                // margin-right: 20px;
+                // height: auto;
+            }
+        }
+        div[image-placeholder] {
+            height: 300px;
+            background-color: gray;
+        }
+        div[text-section-image-caption] {
+            font-style: italic;
+            margin: 2%;
+            font-size: 0.75em;
+        }
+    }
+    div[text-section-image-text] {}
+}
