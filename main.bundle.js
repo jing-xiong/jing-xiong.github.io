@@ -171,10 +171,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var appRoutes = [
-    { path: '', redirectTo: '/portfolio', pathMatch: 'full' },
+    { path: '', component: __WEBPACK_IMPORTED_MODULE_7__portfolio_portfolio_component__["a" /* PortfolioComponent */] },
     { path: 'about', component: __WEBPACK_IMPORTED_MODULE_8__about_about_component__["a" /* AboutComponent */] },
-    { path: 'portfolio', component: __WEBPACK_IMPORTED_MODULE_7__portfolio_portfolio_component__["a" /* PortfolioComponent */] },
     { path: 'portfolioItemDetailTemplate', component: __WEBPACK_IMPORTED_MODULE_9__portfolio_item_detail_portfolio_item_detail_component__["a" /* PortfolioItemDetailComponent */] },
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {
@@ -208,7 +208,7 @@ var AppModule = /** @class */ (function () {
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div logo-header routerLink=\"/portfolio\" routerLinkActive=\"active\">\n  <div first-name>\n    <span>J</span><span first-name-fade>ing&nbsp;</span>\n  </div>\n  <div last-name>\n    <span>X</span><span last-name-fade>iong</span>\n  </div>\n</div>\n<!-- <div nav-menu> -->\n  <nav>\n    <a routerLink=\"/portfolio\" routerLinkActive=\"active\">\n      Portfolio\n    </a>\n    <a routerLink=\"/about\" routerLinkActive=\"active\">\n      About\n    </a>\n  </nav>\n<!-- </div> -->"
+module.exports = "<div logo-header routerLink=\"/\" routerLinkActive=\"active\">\n  <div first-name>\n    <span>J</span><span first-name-fade>ing&nbsp;</span>\n  </div>\n  <div last-name>\n    <span>X</span><span last-name-fade>iong</span>\n  </div>\n</div>\n<!-- <div nav-menu> -->\n  <nav>\n    <a routerLink=\"/\" routerLinkActive=\"active\">\n      Portfolio\n    </a>\n    <a routerLink=\"/about\" routerLinkActive=\"active\">\n      About\n    </a>\n  </nav>\n<!-- </div> -->"
 
 /***/ }),
 

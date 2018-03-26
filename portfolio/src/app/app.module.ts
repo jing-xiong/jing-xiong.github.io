@@ -11,10 +11,10 @@ import { AboutComponent } from './about/about.component';
 import { PortfolioItemDetailComponent } from './portfolio-item-detail/portfolio-item-detail.component';
 
 const appRoutes: Routes = [
-  { path: '',   redirectTo: '/portfolio', pathMatch: 'full' },
+  { path: '', component: PortfolioComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'portfolio', component: PortfolioComponent },
   { path: 'portfolioItemDetailTemplate', component: PortfolioItemDetailComponent },
+  { path: '**',  redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
