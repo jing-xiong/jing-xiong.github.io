@@ -20,7 +20,7 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /***/ "../../../../../src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div profile-image></div>\n<h1>Jing Xiong</h1>\n<p>This is a short bio about me. I love to bake, eat cake, and sit by lakes.</p>"
+module.exports = "<div profile-image>\n    <!-- <img src='/assets/images/headshot_portfolio.jpg'> -->\n</div>\n<h1>Hi, I'm Jing.</h1>\n<div class=\"profile-content\">\n<p>I'm a <strong>Master's of Information Management and Systems student</strong> at UC Berkeley's School of Information. I'm focusing on <strong>UX design</strong> because I enjoy anticipating people's needs. Whether by pouring someone a cup of tea or designing an intuitive user flow, I'm always looking for how I can use my skills to build a more organized and empathetic world.</p>\n<br>\n<p>Born in China, an early love of reading fueled by fiction from my local library brought me to appreciate the multitude of characters and views that literature offered. After double majoring in English lit and Chinese and graduating from UC Berkeley with highest honors, I began to become interested in design because it was a practical application of my ability to empathize.</p>\n<br>\n<p>When not designing digital applications, you'll find me baking cakes, playing with watercolor, or exploring cool spots in the East Bay. </p>\n</div>"
 
 /***/ }),
 
@@ -32,7 +32,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ":host {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\ndiv[profile-image] {\n  height: 250px;\n  width: 250px;\n  border-radius: 250px;\n  background-color: pink; }\n", ""]);
+exports.push([module.i, ":host {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center; }\n\ndiv[profile-image] {\n  height: 250px;\n  width: 250px;\n  border-radius: 250px;\n  background: url(/assets/images/headshot_portfolio.jpg);\n  background-position: 64%;\n  background-size: 150%; }\n\ndiv.profile-content {\n  padding-left: 150px;\n  padding-right: 150px; }\n", ""]);
 
 // exports
 
